@@ -361,15 +361,15 @@ footer hr{
     }
 }
 
-/* --------------MAIN QUIENES SOMOS---------------- */
-
-.quienes-somos-titulo{
+.titulo-paginas{
     background-color: dodgerblue;
     padding: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
+/* --------------MAIN QUIENES SOMOS---------------- */
 
 .h2-main-quienes-somos{
     font-size: 30px;
@@ -463,4 +463,49 @@ footer hr{
     border:  10px solid white;
     padding: 5px;
     gap: 15px;
+}
+
+/* --------------MAIN CONTACTANOS------------------ */
+
+.contenedor-main-contactanos{
+    background-image: url("../img/fondo-form-contactanos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hijos-form-contacto-main{
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grupo-1-main-contactanos{
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.grupo-2-main-contactanos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* MEDIAQUERI PARA TABLET DEL MAIN CONTACTO */
+@media(min-width: 768px){
+    .contenedor-main-contactanos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 100%;
+    }
 }
