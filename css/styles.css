@@ -13,14 +13,27 @@ ul, ol{
     list-style: none;
 }
 
+.hamburguesa nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-hamburguesa{
+    background-color: dodgerblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
 /* ---------------------------HEADER INDEX MOBIL------------------------ */
 
 .header-index{
-    background-color: dodgerblue;
     color: white;
 }
 
 .header-index-contenedor-redes{
+    background-color: dodgerblue;
     display: flex;
     justify-content: center;
     height: 5vh;
