@@ -1,0 +1,208 @@
+// -------------------------- MAIN INDEX ----------------------------
+.titulo-paginas{
+    background-color: $color-azul;
+    color: $color-blanco;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient( to left, black,$color-azul);
+}
+
+.main-index{
+    background-color: $color-blanco;
+    padding: 0;
+
+    .contenedor-main-index-1{
+        height: 50vh;
+        background-image: url("../img/imagen-1h.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+    }
+
+    .contenedor-main-index-2{
+        height: 15vh;
+        background-color: $color-azul;
+        color: $color-blanco;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        text-align: center;
+        background-image: linear-gradient( to left, black,$color-azul);
+    }
+
+    .contenedor-main-index-3{
+        height: 50vh;
+        background-image: url("../img/imagen-2h.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 20px;
+        border:  10px solid $color-blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .contenedor-main-index-4{
+        height: 50vh;
+        background-image: url("../img/imagen-3h.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 20px;
+        border:  10px solid $color-blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .contenedor-main-index-5{
+    height: 50vh;
+    background-image: url("../img/imagen-4h.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 20px;
+    border:  10px solid $color-blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    }
+    
+    .contenedor-main-index-6{
+    height: 50vh;
+    background-image: url("../img/imagen-5h.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 20px;
+    border:  10px solid $color-blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    }
+
+    .contenedor-main-index-7{
+        background-color: $color-blanco;
+        height: auto;
+
+        .contenedor-titulo-lo-mas-vendido{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            background-color: $color-azul;
+            color: $color-blanco;
+            background-image: linear-gradient( to left,$color-azul,black);
+        }
+
+        .main-index-contenedor-lo-mas-vendido{
+            .main-index-productos-mas-vendidos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+
+                .imgs-index-lo-mas-vendido{
+                    height: 260px;
+                    width: 250px;
+                }
+                
+                .nom-producto-mas-vendido{
+                    padding: 5px;
+                    font-size: 20px;
+                } 
+                
+                .precio-productos-mas-vendidos{
+                    padding: 5px;
+                }
+
+            }
+        }
+    }
+
+    .contenedor-8{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 10px;
+        font-size: 30px;
+        text-align: center;
+
+        .btn-instagram{
+            background-color: rgb(119, 141, 249);
+            padding: 5px 20px;
+            color: $color-blanco;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+        
+            &:hover{
+                background-color: $color-blanco;
+                color: rgb(119, 141, 249);
+                border: 3px solid rgb(119, 141, 249);
+                transform: scale(1.1,1.1);
+                transition-property: all;
+                transition-duration: 250ms;
+                transition-timing-function: ease;
+            }
+        }
+    }
+}
+
+// -------------- MEDIAQUERIE PARA MEDIDA DE 530PX -----------------
+@media(min-width: 530px){
+
+    .main-index-contenedor-lo-mas-vendido{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+// --------------- MEDIAQUERIE PARA TABLET DEL MAIN -----------------
+@media(min-width: 768px){
+    .main-index-contenedor-lo-mas-vendido{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+// ----------- MEDIAQUERIE PARA ESCRITORIO DEL MAIN -----------------
+@media(min-width: 1200px){
+    .main-index-contenedor-lo-mas-vendido{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}

@@ -1,0 +1,37 @@
+.btn-ver-mas{
+    background-color: $color-botones-comprar;
+    padding: 15px 35px;
+    color: $color-blanco;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+
+    &:hover{
+        background-color: $color-blanco;
+        color: $color-botones-comprar;
+        border: 3px solid $color-botones-comprar;
+        transform: scale(1.1,1.1);
+        transition-property: all;
+        transition-duration: 250ms;
+        transition-timing-function: ease;
+    }
+}
+
+.btn-comprar{
+    background-color: $color-botones-comprar;
+    padding: 5px 20px;
+    color: $color-blanco;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+
+    &:hover{
+        background-color: $color-blanco;
+        color: $color-botones-comprar;
+        border: 3px solid $color-botones-comprar;
+        transform: scale(1.2,1.2);
+        transition-property: all;
+        transition-duration: 250ms;
+        transition-timing-function: ease;
+    }
+}

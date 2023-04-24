@@ -1,0 +1,43 @@
+// --------------------- MAIN CONTACTANOS ------------------------
+.contenedor-main-contactanos{
+    background-image: url("../img/fondo-form-contactanos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .grupo-1-main-contactanos{
+        padding: 20px;
+        font-size: 18px;
+        color: $color-blanco;
+
+        .hijos-form-contacto-main{
+            display: flex;
+            gap: 20px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .grupo-2-main-contactanos{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: $color-blanco;
+    }
+}
+
+// ----------- MEDIAQUERIE PARA TABLET DEL MAIN CONTACTO -----------
+@media(min-width: 768px){
+    .contenedor-main-contactanos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 100%;
+    }
+}

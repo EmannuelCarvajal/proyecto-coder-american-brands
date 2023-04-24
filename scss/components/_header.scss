@@ -1,0 +1,98 @@
+//---------------------- HEADER INDEX MOBIL ------------------------
+
+.header-index{
+    color: $color-blanco;
+
+    .header-index-contenedor-redes{
+        background-color: $color-azul;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+        align-items: center;
+        font-size: 20px;
+        gap: 20px;
+        background-image: linear-gradient( to left, $color-azul,black);
+
+        .header-index-contenedor-icono{
+            .header-icono{
+                color: $color-blanco;
+            }
+
+            &:hover{
+                transform: scale(1.5,1.5);
+                transition-property: all;
+                transition-duration: 250ms;
+                transition-timing-function: ease;
+            }
+        }
+    }
+
+    .header-index-contenedor-img-title{
+        display: flex;
+        justify-content: center;
+        background-color: $color-blanco;
+        height: 15vh;
+    
+        .header-index-img-title{
+            height: 25vh;
+            width: 60vh;
+        }
+    }
+
+    .header-index-form{
+        background-color: $color-blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .hamburguesa nav{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        .container-hamburguesa{
+            background-color: $color-azul;
+            color: $color-blanco;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-image: linear-gradient( to left, rgb(70, 68, 68),$color-azul);
+        }
+    }
+}
+
+//------------ MEDIAQUERIE PARA TABLET DEL HEADER INDEX -------------
+@media(min-width: 768px){
+    .header-index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 4hv 20vh 4vh;
+
+        .header-index-contenedor-redes{
+            grid-column: span 2;
+        }
+    
+        .header-index-contenedor-img-title{
+            height: 20vh;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .header-index-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+// ------- MEDIAQUERIE PARA ESCRITORIO DEL HEADER INDEX -------------
+@media(min-width: 1200px){
+    .header-index-contenedor-redes{
+        display: flex;
+        justify-content: end;
+        padding: 25px;
+    }
+}

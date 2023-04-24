@@ -1,0 +1,96 @@
+// ------------------- MAIN QUIENES SOMOS -------------------------
+.section-main-quienes-somos{
+    .contenedor-1qm{
+        height: 60vh;
+        background-image: url("../img/nuestra-empresa-qm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+        padding: 5px;
+        gap: 15px;
+
+        .h2-main-quienes-somos{
+            font-size: 30px;
+        }
+    }
+
+    .contenedor-2qm{
+        height: 60vh;
+        background-image: url("../img/imagen-2qm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+        padding: 5px;
+        gap: 15px;
+    }
+    
+    .contenedor-3qm{
+        height: 60vh;
+        background-image: url("../img/imagen-3qm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+        padding: 5px;
+        gap: 15px;
+    }
+    
+    .contenedor-4qm{
+        height: 60vh;
+        background-image: url("../img/imagen-4qm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+        padding: 5px;
+        gap: 15px;
+    }
+    
+    .contenedor-5qm{
+        height: 60vh;
+        background-image: url("../img/imagen-5qm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border:  10px solid $color-blanco;
+        padding: 5px;
+        gap: 15px;
+    }
+}

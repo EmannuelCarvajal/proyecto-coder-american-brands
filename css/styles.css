@@ -1,604 +1,558 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-a{
-    text-decoration: none;
-} 
-
-ul, ol{
-    list-style: none;
+a {
+  text-decoration: none;
 }
 
-.hamburguesa nav{
+ul, ol {
+  list-style: none;
+}
+
+.header-index {
+  color: white;
+}
+.header-index .header-index-contenedor-redes {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+  background-image: linear-gradient(to left, dodgerblue, black);
+}
+.header-index .header-index-contenedor-redes .header-index-contenedor-icono .header-icono {
+  color: white;
+}
+.header-index .header-index-contenedor-redes .header-index-contenedor-icono:hover {
+  transform: scale(1.5, 1.5);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.header-index .header-index-contenedor-img-title {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 15vh;
+}
+.header-index .header-index-contenedor-img-title .header-index-img-title {
+  height: 25vh;
+  width: 60vh;
+}
+.header-index .header-index-form {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.header-index .hamburguesa nav {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-index .hamburguesa nav .container-hamburguesa {
+  background-color: dodgerblue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, rgb(70, 68, 68), dodgerblue);
+}
+
+@media (min-width: 768px) {
+  .header-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4hv 20vh 4vh;
+  }
+  .header-index .header-index-contenedor-redes {
+    grid-column: span 2;
+  }
+  .header-index .header-index-contenedor-img-title {
+    height: 20vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.container-hamburguesa{
-    background-color: dodgerblue;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-/* ---------------------------HEADER INDEX MOBIL------------------------ */
-
-.header-index{
-    color: white;
-}
-
-.header-index-contenedor-redes{
-    background-color: dodgerblue;
-    display: flex;
-    justify-content: center;
-    height: 5vh;
-    align-items: center;
-    font-size: 20px;
-    gap: 20px;
-}
-
-
-.header-index-contenedor-img-title{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    height: 15vh;
-}
-.header-index-img-title{
-    height: 25vh;
-    width: 60vh;
-}
-
-.header-index-form{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.header-index-hijos-list{
-    text-align: center;
-    padding: 5px;
-}
-
-.header-links{
-    color: white;
-}
-
-/* --------MEDIAQUERIE PARA TABLET DEL HEADER INDEX------------------- */
-@media(min-width: 768px){
-    .header-index{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 4hv 20vh 4vh;
-    }
-
-    .header-index-contenedor-redes{
-        grid-column: span 2;
-    }
-
-    .header-index-contenedor-img-title{
-        height: 20vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header-index-form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header-index-nav{
-        grid-column: span 2;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-index-list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-}
-
-/* ---------- MEDIAQUERI PARA ESCRITORIO DEL HEADER INDEX ------------ */
-@media(min-width: 1200px){
-    .header-index-contenedor-redes{
-        display: flex;
-        justify-content: end;
-        padding: 25px;
-    }
-}
-
-/* -----------------------------MAIN INDEX------------------------------ */
-
-.main-index{
-    background-color: white;
-    padding: 0;
-}
-
-.btn-ver-mas{
-    background-color: rgb(108, 236, 108);
-    padding: 15px 35px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-.contenedor-main-index-1{
-    height: 50vh;
-    background-image: url("../img/imagen-1h.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 20px;
-    text-align: center;
+  }
+  .header-index .header-index-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:  10px solid white;
+  }
+}
+@media (min-width: 1200px) {
+  .header-index-contenedor-redes {
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+  }
+}
+.btn-ver-mas {
+  background-color: rgb(108, 236, 108);
+  padding: 15px 35px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.btn-ver-mas:hover {
+  background-color: white;
+  color: rgb(108, 236, 108);
+  border: 3px solid rgb(108, 236, 108);
+  transform: scale(1.1, 1.1);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
-.contenedor-main-index-2{
-    height: 15vh;
-    background-color: dodgerblue;
-    color: white;
-    font-size: 30px;
+.btn-comprar {
+  background-color: rgb(108, 236, 108);
+  padding: 5px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.btn-comprar:hover {
+  background-color: white;
+  color: rgb(108, 236, 108);
+  border: 3px solid rgb(108, 236, 108);
+  transform: scale(1.2, 1.2);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.pie-pagina {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px;
+  background-image: linear-gradient(to left, dodgerblue, black);
+}
+.pie-pagina footer p {
+  padding: 5px;
+}
+.pie-pagina footer h4 {
+  font-size: 1.5rem;
+}
+.pie-pagina .titulo-footer {
+  font-size: 60px;
+  padding: 10px;
+}
+.pie-pagina .grupo-1 .footer-nuestra-ubicacion,
+.pie-pagina .grupo-1 .footer-horarios,
+.pie-pagina .grupo-1 .footer-contactanos {
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pie-pagina .grupo-1 .footer-index-contenedor-redes {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  align-items: center;
+  font-size: 30px;
+  gap: 30px;
+  padding: 40px;
+}
+.pie-pagina .grupo-1 .footer-index-contenedor-redes .footer-index-contenedor-icono .footer-icono {
+  color: white;
+}
+.pie-pagina .grupo-1 .footer-index-contenedor-redes .footer-index-contenedor-icono:hover {
+  transform: scale(1.5, 1.5);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.pie-pagina .grupo-2 {
+  text-align: center;
+}
+.pie-pagina footer hr {
+  color: black;
+}
+.pie-pagina .copy-footer {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .grupo-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 15px;
-    text-align: center;
+  }
+}
+.titulo-paginas {
+  background-color: dodgerblue;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(to left, black, dodgerblue);
 }
 
-.contenedor-main-index-3{
-    height: 50vh;
-    background-image: url("../img/imagen-2h.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 20px;
-    border:  10px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+.main-index {
+  background-color: white;
+  padding: 0;
+}
+.main-index .contenedor-main-index-1 {
+  height: 50vh;
+  background-image: url("../img/imagen-1h.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+}
+.main-index .contenedor-main-index-2 {
+  height: 15vh;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  text-align: center;
+  background-image: linear-gradient(to left, black, dodgerblue);
+}
+.main-index .contenedor-main-index-3 {
+  height: 50vh;
+  background-image: url("../img/imagen-2h.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 20px;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-index .contenedor-main-index-4 {
+  height: 50vh;
+  background-image: url("../img/imagen-3h.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 20px;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-index .contenedor-main-index-5 {
+  height: 50vh;
+  background-image: url("../img/imagen-4h.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 20px;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-index .contenedor-main-index-6 {
+  height: 50vh;
+  background-image: url("../img/imagen-5h.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 20px;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-index .contenedor-main-index-7 {
+  background-color: white;
+  height: auto;
+}
+.main-index .contenedor-main-index-7 .contenedor-titulo-lo-mas-vendido {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  background-image: linear-gradient(to left, dodgerblue, black);
+}
+.main-index .contenedor-main-index-7 .main-index-contenedor-lo-mas-vendido .main-index-productos-mas-vendidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.main-index .contenedor-main-index-7 .main-index-contenedor-lo-mas-vendido .main-index-productos-mas-vendidos .imgs-index-lo-mas-vendido {
+  height: 260px;
+  width: 250px;
+}
+.main-index .contenedor-main-index-7 .main-index-contenedor-lo-mas-vendido .main-index-productos-mas-vendidos .nom-producto-mas-vendido {
+  padding: 5px;
+  font-size: 20px;
+}
+.main-index .contenedor-main-index-7 .main-index-contenedor-lo-mas-vendido .main-index-productos-mas-vendidos .precio-productos-mas-vendidos {
+  padding: 5px;
+}
+.main-index .contenedor-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.main-index .contenedor-8 .btn-instagram {
+  background-color: rgb(119, 141, 249);
+  padding: 5px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.main-index .contenedor-8 .btn-instagram:hover {
+  background-color: white;
+  color: rgb(119, 141, 249);
+  border: 3px solid rgb(119, 141, 249);
+  transform: scale(1.1, 1.1);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
-.contenedor-main-index-4{
-    height: 50vh;
-    background-image: url("../img/imagen-3h.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 20px;
-    border:  10px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+@media (min-width: 530px) {
+  .main-index-contenedor-lo-mas-vendido {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media (min-width: 768px) {
+  .main-index-contenedor-lo-mas-vendido {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+@media (min-width: 1200px) {
+  .main-index-contenedor-lo-mas-vendido {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+.section-main-quienes-somos .contenedor-1qm {
+  height: 60vh;
+  background-image: url("../img/nuestra-empresa-qm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  padding: 5px;
+  gap: 15px;
+}
+.section-main-quienes-somos .contenedor-1qm .h2-main-quienes-somos {
+  font-size: 30px;
+}
+.section-main-quienes-somos .contenedor-2qm {
+  height: 60vh;
+  background-image: url("../img/imagen-2qm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  padding: 5px;
+  gap: 15px;
+}
+.section-main-quienes-somos .contenedor-3qm {
+  height: 60vh;
+  background-image: url("../img/imagen-3qm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  padding: 5px;
+  gap: 15px;
+}
+.section-main-quienes-somos .contenedor-4qm {
+  height: 60vh;
+  background-image: url("../img/imagen-4qm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  padding: 5px;
+  gap: 15px;
+}
+.section-main-quienes-somos .contenedor-5qm {
+  height: 60vh;
+  background-image: url("../img/imagen-5qm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  padding: 5px;
+  gap: 15px;
 }
 
-.contenedor-main-index-5{
-height: 50vh;
-background-image: url("../img/imagen-4h.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-font-size: 20px;
-border:  10px solid white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 15px;
+.contenedor-main-contactanos {
+  background-image: url("../img/fondo-form-contactanos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.contenedor-main-contactanos .grupo-1-main-contactanos {
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+}
+.contenedor-main-contactanos .grupo-1-main-contactanos .hijos-form-contacto-main {
+  display: flex;
+  gap: 20px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contenedor-main-contactanos .grupo-2-main-contactanos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
 }
 
-.contenedor-main-index-6{
-height: 50vh;
-background-image: url("../img/imagen-5h.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-font-size: 20px;
-border:  10px solid white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 15px;
+@media (min-width: 768px) {
+  .contenedor-main-contactanos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+  }
+}
+.form-productos {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
-.contenedor-main-index-7{
-background-color: white;
-height: auto;
+.figure-productos .hijos-figure-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.figure-productos .hijos-figure-productos .imgs-productos {
+  height: 260px;
+  width: 240px;
+  border: 3px solid dodgerblue;
+}
+.figure-productos .hijos-figure-productos .nom-productos {
+  padding: 5px;
+  font-size: 20px;
+}
+.figure-productos .hijos-figure-productos .precio-productos {
+  padding: 5px;
 }
 
-.contenedor-titulo-lo-mas-vendido{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    background-color: dodgerblue;
-    color: white;
-}
-
-.imgs-index-lo-mas-vendido{
-    height: 260px;
-    width: 250px;
-}
-
-.nom-producto-mas-vendido{
-    padding: 5px;
-    font-size: 20px;
-} 
-
-.precio-productos-mas-vendidos{
-    padding: 5px;
-}
-
-.btn-comprar{
-    background-color: rgb(108, 236, 108);
-    padding: 5px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-.main-index-productos-mas-vendidos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (min-width: 530px) {
+  .figure-productos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .figure-productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media (min-width: 1200px) {
+  .figure-productos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
 }
 
-.btn-instagram{
-    background-color: rgb(119, 141, 249);
-    padding: 5px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 20px;
-
-}
-
-
-.contenedor-8{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    gap: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-
-/* ------------------------------MEDIAQUERI PARA MEDIDA DE 530PX--------------------- */
-
-@media(min-width: 530px){
-
-    .main-index-contenedor-lo-mas-vendido{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-    }
-}
-
-/* --------------MEDIAQUERI PARA TABLET DEL MAIN------------------- */
-@media(min-width: 768px){
-    .main-index-contenedor-lo-mas-vendido{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-    }
-}
-
-/*-------------MEDIAQUERI PARA ESCRITORIO DEL MAIN----------------- */
-@media(min-width: 1200px){
-    .main-index-contenedor-lo-mas-vendido{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto;
-    }
-}
-
-/* -----------------------FOOTER-------------------------- */
-
-.pie-pagina{
-    background-color: dodgerblue;
-    color: white;
-    padding: 15px;
-}
-
-.subtitulos-footer{
-    color: black;
-    padding: 10px;
-}
-
-.titulo-footer{
-    font-size: 60px;
-    padding: 10px;
-}
-
-footer p{
-    padding: 5px;
-}
-
-footer h4{
-    font-size: 1.5rem;
-}
-
-.footer-nuestra-ubicacion,
-.footer-horarios,
-.footer-contactanos{
-    font-size: 1rem;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.grupo-2{
-    text-align: center;
-}
-
-footer hr{
-    color: black;
-}
-
-.copy-footer{
-    font-size: 10px;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-
-/* -----------------MEDIAQURI PARA TABLET DEL FOOTER--------------- */
-@media(min-width: 768px){
-    .grupo-1{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.titulo-paginas{
-    background-color: dodgerblue;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-/* --------------MAIN QUIENES SOMOS---------------- */
-
-.h2-main-quienes-somos{
-    font-size: 30px;
-}
-
-.contenedor-1qm{
-    height: 60vh;
-    background-image: url("../img/nuestra-empresa-qm.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border:  10px solid white;
-    padding: 5px;
-    gap: 15px;
-}
-
-.contenedor-2qm{
-    height: 60vh;
-    background-image: url("../img/imagen-2qm.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border:  10px solid white;
-    padding: 5px;
-    gap: 15px;
-}
-
-.contenedor-3qm{
-    height: 60vh;
-    background-image: url("../img/imagen-3qm.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border:  10px solid white;
-    padding: 5px;
-    gap: 15px;
-}
-
-.contenedor-4qm{
-    height: 60vh;
-    background-image: url("../img/imagen-4qm.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border:  10px solid white;
-    padding: 5px;
-    gap: 15px;
-}
-
-.contenedor-5qm{
-    height: 60vh;
-    background-image: url("../img/imagen-5qm.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border:  10px solid white;
-    padding: 5px;
-    gap: 15px;
-}
-
-/* --------------MAIN CONTACTANOS------------------ */
-
-.contenedor-main-contactanos{
-    background-image: url("../img/fondo-form-contactanos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.hijos-form-contacto-main{
-    display: flex;
-    gap: 20px;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.grupo-1-main-contactanos{
-    padding: 20px;
-    font-size: 18px;
-    color: white;
-}
-
-.grupo-2-main-contactanos{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-
-/* MEDIAQUERI PARA TABLET DEL MAIN CONTACTO */
-@media(min-width: 768px){
-    .contenedor-main-contactanos{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 100%;
-    }
-}
-
-/* ------MAIN PARA LAS PAGINAS DE PRODUCTOS-------- */
-
-.imgs-productos{
-    height: 260px;
-    width: 240px;
-    border: 3px solid dodgerblue;
-}
-
-.nom-productos{
-    padding: 5px;
-    font-size: 20px;
-} 
-
-.precio-productos{
-    padding: 5px;
-}
-
-.form-productos{
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-.hijos-figure-productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-@media(min-width: 530px){
-    .figure-productos{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-        padding: 10px;
-    }
-}
-
-
-
-
-
-
-
-/* --------------MEDIAQUERI PARA TABLET DEL MAIN PRODUCTOS------------------- */
-@media(min-width: 768px){
-    .figure-productos{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-    }
-}
-
-/*-------------MEDIAQUERI PARA ESCRITORIO DEL MAIN PRODUCTOS----------------- */
-@media(min-width: 1200px){
-    .figure-productos{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto;
-    }
-}
-
+/*# sourceMappingURL=styles.css.map */
