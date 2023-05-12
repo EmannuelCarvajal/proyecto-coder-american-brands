@@ -315,6 +315,7 @@ ul, ol {
   align-items: center;
   text-align: center;
   padding: 10px;
+  overflow-x: hidden;
 }
 .main-index .contenedor-main-index-7 .main-index-contenedor-lo-mas-vendido .main-index-productos-mas-vendidos .imgs-index-lo-mas-vendido {
   height: 260px;
@@ -518,6 +519,7 @@ ul, ol {
   align-items: center;
   text-align: center;
   padding: 10px;
+  overflow-x: hidden;
 }
 .figure-productos .hijos-figure-productos .imgs-productos {
   height: 260px;
